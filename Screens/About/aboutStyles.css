@@ -1,0 +1,46 @@
+.aboutSection {
+  height: 100vh;
+  position: relative;
+  padding-top: 7.1em;
+}
+
+.aboutHeading {
+  margin: 0 auto;
+}
+
+.brandPanel,
+.verticalPanel {
+  background-color: var(--backgroundColor);
+  height: auto;
+}
+
+.servicesSection {
+  padding-top: 17em;
+}
+
+.sectionContent {
+  margin-top: 16em;
+}
+
+.servicesHeading {
+  top: 0;
+}
+
+.aboutFlomarColText {
+  margin-top: 5em;
+  width: 358.93px;
+}
+
+.colHeading {
+  margin-top: 10em;
+  margin-left: 12.9em;
+}
+
+.aboutCol {
+  width: 20%;
+}
+
+.aboutText {
+  margin-left: -94px;
+  width: 353px;
+}

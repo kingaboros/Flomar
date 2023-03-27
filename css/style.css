@@ -20,8 +20,8 @@
 
       2.1 Brand
       2.2 Vertical Panel
-      2.3 Navbar Desctop
-      2.4 Navbar Desctop Affix
+      2.3 Navbar Desktop
+      2.4 Navbar Desktop Affix
       2.5 Navbar Mobile
       2.6 Navbar Mobile Affix
       
@@ -79,6 +79,7 @@ body {
   font-size: 1em;
   line-height: 1.65;
   color: #747474;
+  background-color: var(--backgroundColor);
 }
 
 ::-webkit-scrollbar {
@@ -303,7 +304,7 @@ label.error {
 .btn:hover,
 .btn:focus {
   color: #fff;
-  background-color: #cc9f6b;
+  background-color: var(--mainColor);
   -webkit-box-shadow: none;
   box-shadow: none;
   outline: none !important;
@@ -330,7 +331,7 @@ label.error {
 }
 
 .btn-shadow-2 {
-  box-shadow: 0 15px 34px rgba(197, 164, 126, 0.5);
+  box-shadow: 0 15px 34px var(--shadowColor);
 }
 
 /* 1.5 Icons */
@@ -536,7 +537,8 @@ label.error {
 }
 
 .fade-title-left,
-.fade-title-right {
+.fade-title-right,
+.fade-title-center {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 10.8em;
@@ -554,6 +556,13 @@ label.error {
 
 .fade-title-right {
   left: 100%;
+}
+
+.fade-title-center {
+  left: 50%;
+  top: 2em;
+  width: 100%;
+  font-size: 11.8em;
 }
 
 .section-content {
@@ -685,7 +694,7 @@ label.error {
 
 .vertical-panel {
   z-index: 3;
-  height: 10000px;
+  height: 100vh;
   background-color: #f6f5f3;
 }
 
@@ -701,7 +710,7 @@ label.error {
   height: 5vmin;
   width: 1px;
   margin: 15px auto 0;
-  background-color: #646464;
+  background-color: var(--mainColor);
 }
 
 .vertical-panel-title {
@@ -745,7 +754,7 @@ label.error {
   text-decoration: none;
 }
 
-/* 2.3 Navbar Desctop */
+/* 2.3 Navbar Desktop */
 
 .nav > li > a {
   padding: 0;
@@ -756,7 +765,7 @@ label.error {
   background-color: transparent;
 }
 
-.navbar-desctop {
+.navbar-desktop {
   display: none;
   position: absolute;
   z-index: 2;
@@ -766,14 +775,14 @@ label.error {
   padding: 5.9vmin 0 0;
 }
 
-.navbar-desctop .brand {
+.navbar-desktop .brand {
   display: none;
   position: relative;
   top: -0.22em;
   font-size: 1.6em;
 }
 
-.navbar-desctop-menu {
+.navbar-desktop-menu {
   float: right;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -783,35 +792,35 @@ label.error {
   margin-bottom: 0;
 }
 
-.navbar-desctop-menu li {
+.navbar-desktop-menu li {
   position: relative;
   -webkit-perspective: 2000px;
   perspective: 2000px;
 }
 
-.navbar-desctop-menu li a {
+.navbar-desktop-menu li a {
   display: block;
   text-decoration: none;
   color: #fff;
 }
 
-.navbar-desctop-menu li a:hover,
-.navbar-desctop-menu .active > a {
+.navbar-desktop-menu li a:hover,
+.navbar-desktop-menu .active > a {
   color: var(--mainColor);
 }
 
-.navbar-desctop-menu > li {
+.navbar-desktop-menu > li {
   float: left;
   margin-left: 4.1em;
 }
 
-.navbar-desctop-menu > li > a {
+.navbar-desktop-menu > li > a {
   color: #fff;
   background-color: transparent;
   margin-bottom: 1.5em;
 }
 
-.navbar-desctop-menu li ul {
+.navbar-desktop-menu li ul {
   position: absolute;
   z-index: 10;
   left: 100%;
@@ -826,37 +835,37 @@ label.error {
   transition: all 0.3s ease-out;
 }
 
-.navbar-desctop-menu > li > ul {
+.navbar-desktop-menu > li > ul {
   left: -20px;
   margin-top: 0;
 }
 
-.navbar-desctop-menu li:hover > ul {
+.navbar-desktop-menu li:hover > ul {
   top: 0;
   visibility: visible;
   opacity: 1;
 }
 
-.navbar-desctop-menu > li:hover > ul {
+.navbar-desktop-menu > li:hover > ul {
   top: 100%;
 }
 
-.navbar-desctop-menu li li {
+.navbar-desktop-menu li li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.navbar-desctop-menu li li:last-child {
+.navbar-desktop-menu li li:last-child {
   border-bottom: 0;
 }
 
-.navbar-desctop-menu li li a {
+.navbar-desktop-menu li li a {
   color: #fff;
   padding: 12px 20px 10px;
 }
 
-/* 2.4 Navbar Desctop Affix */
+/* 2.4 Navbar Desktop Affix */
 
-.navbar-desctop.affix {
+.navbar-desktop.affix {
   position: fixed;
   z-index: 5;
   top: 0;
@@ -865,20 +874,20 @@ label.error {
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-desctop.affix.affix-top {
+.navbar-desktop.affix.affix-top {
   padding-top: 2.2em;
 }
 
-.navbar-desctop.affix .brand {
+.navbar-desktop.affix .brand {
   display: inline-block;
 }
 
-.navbar-desctop.affix .navbar-desctop-menu li a {
+.navbar-desktop.affix .navbar-desktop-menu li a {
   color: #000;
 }
 
-.navbar-desctop.affix .navbar-desctop-menu li > a:hover,
-.navbar-desctop.affix .navbar-desctop-menu .active > a {
+.navbar-desktop.affix .navbar-desktop-menu li > a:hover,
+.navbar-desktop.affix .navbar-desktop-menu .active > a {
   color: var(--mainColor);
 }
 
@@ -1068,7 +1077,7 @@ label.error {
   line-height: 1;
   letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--mainColor);
 }
 
 .arrow-left:after {
@@ -1242,7 +1251,7 @@ label.error {
   height: 9em;
   margin: -4.5em;
   border-radius: 50%;
-  background-color: rgba(197, 164, 126, 0.84);
+  background-color: var(--redBackground);
   overflow: hidden;
   opacity: 0;
   -webkit-transform: scale(0.5);
@@ -1497,11 +1506,11 @@ img.mfp-img {
 .text-parallax-content {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  font-size: 21.8em;
+  font-size: 16em;
   line-height: 1;
   overflow: hidden;
-  margin-bottom: 0;
-  background: #fff;
+  margin: -9px;
+  background: var(--backgroundColor);
   color: #363636;
   mix-blend-mode: lighten;
   -ms-mix-blend-mode: lighten;
@@ -1616,7 +1625,7 @@ img.mfp-img {
   font-weight: normal;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--mainColor);
+  color: var(--lighterMain);
   padding: 0 0 1em;
   border-bottom: 1px solid rgba(249, 249, 249, 0.2);
   margin: 0 0 0.5em;

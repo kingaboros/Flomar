@@ -1,3 +1,7 @@
 :root {
   --mainColor: #f40000;
+  --lighterMain: #ec6161;
+  --backgroundColor: #cdcdcd;
+  --shadowColor: rgba(244, 0, 0, 0.29);
+  --redBackground: rgba(240, 85, 85, 0.84);
 }
