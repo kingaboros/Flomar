@@ -785,7 +785,7 @@ label.error {
 .navbar-desktop-menu {
   float: right;
   font-family: 'Oswald', sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 0.81em;
   letter-spacing: 0.32em;
   text-transform: uppercase;
@@ -801,12 +801,12 @@ label.error {
 .navbar-desktop-menu li a {
   display: block;
   text-decoration: none;
-  color: #fff;
+  color: var(--mainColor);
 }
 
 .navbar-desktop-menu li a:hover,
 .navbar-desktop-menu .active > a {
-  color: var(--mainColor);
+  color: #fff;
 }
 
 .navbar-desktop-menu > li {
@@ -815,7 +815,7 @@ label.error {
 }
 
 .navbar-desktop-menu > li > a {
-  color: #fff;
+  color: var(--mainColor);
   background-color: transparent;
   margin-bottom: 1.5em;
 }
@@ -1701,6 +1701,7 @@ img.mfp-img {
   padding: 9.6em 0 5.5em;
   font-size: 12px;
   color: #aaa;
+  z-index: 0;
 }
 
 .footer .brand {

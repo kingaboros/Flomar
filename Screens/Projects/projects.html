@@ -33,7 +33,7 @@
     <link href="./projectStyles.css" rel="stylesheet" media="screen" />
     <link href="./galleryStyles.scss" rel="stylesheet" media="screen" />
   </head>
-  <body>
+  <body onclick="document.getElementById('owrap').className='show'">
     <!-- Header -->
     <div w3-include-html="/assets/header.html"></div>
 
@@ -43,7 +43,6 @@
     <div class="layout">
       <div class="content">
         <!-- Map -->
-
         <section id="objects" class="objects section">
           <div class="container">
             <div class="section-content">
@@ -144,21 +143,22 @@
           </div>
         </section>
 
+        <!-- Key text  -->
         <section class="projectMission">
           <div class="row-base row">
-            <div class="col-base col-sm-6 col-md-3">
+            <div class="col-base col-sm-12 col-md-3">
               <h3 class="col-about-title">
                 <span class="text-primary">.</span> we turn ideas into works of
                 art
               </h3>
             </div>
-            <div class="col-base col-sm-6 col-md-3">
+            <div class="col-base col-sm-12 col-md-3">
               <h3 class="col-about-title">
                 <span class="text-primary">.</span> we turn ideas into works of
                 art
               </h3>
             </div>
-            <div class="col-base col-sm-6 col-md-3">
+            <div class="col-base col-sm-12 col-md-3">
               <h3 class="col-about-title">
                 <span class="text-primary">.</span> we turn ideas into works of
                 art
@@ -179,90 +179,221 @@
         </section>
 
         <!-- Projects gallery -->
-        <section>
+        <section class="gallerySection">
           <div class="carousel">
             <div class="carousel-item">
               <div class="carousel-box">
                 <p class="projectName">Project Name</p>
-                <p class="detailsLink">View more</p>
+                <label
+                  for="op"
+                  onclick="document.getElementById('owrap').className='show'"
+                  class="detailsLink"
+                >
+                  View more
+                </label>
                 <img src="../../img/projects/project (1).jpeg" />
               </div>
             </div>
             <div class="carousel-item">
               <div class="carousel-box">
                 <p class="projectName">Project Name</p>
-                <p class="detailsLink">View more</p>
+                <label
+                  for="op"
+                  onclick="document.getElementById('owrap').className='show'"
+                  class="detailsLink"
+                >
+                  View more
+                </label>
                 <img src="../../img/projects/project (2).jpeg" />
               </div>
             </div>
             <div class="carousel-item">
               <div class="carousel-box">
                 <p class="projectName">Project Name</p>
-                <p class="detailsLink">View more</p>
+                <label
+                  for="op"
+                  onclick="document.getElementById('owrap').className='show'"
+                  class="detailsLink"
+                >
+                  View more
+                </label>
                 <img src="../../img/projects/project (3).jpeg" />
               </div>
             </div>
             <div class="carousel-item">
               <div class="carousel-box">
                 <p class="projectName">Project Name</p>
-                <p class="detailsLink">View more</p>
+                <label
+                  for="op"
+                  onclick="document.getElementById('owrap').className='show'"
+                  class="detailsLink"
+                >
+                  View more
+                </label>
                 <img src="../../img/projects/project (4).jpeg" />
               </div>
             </div>
             <div class="carousel-item">
               <div class="carousel-box">
                 <p class="projectName">Project Name</p>
-                <p class="detailsLink">View more</p>
+                <label
+                  for="op"
+                  onclick="document.getElementById('owrap').className='show'"
+                  class="detailsLink"
+                >
+                  View more
+                </label>
                 <img src="../../img/projects/project (5).jpeg" />
               </div>
             </div>
             <div class="carousel-item">
               <div class="carousel-box">
                 <p class="projectName">Project Name</p>
-                <p class="detailsLink">View more</p>
+                <label
+                  for="op"
+                  onclick="document.getElementById('owrap').className='show'"
+                  class="detailsLink"
+                >
+                  View more
+                </label>
                 <img src="../../img/projects/project (6).jpeg" />
               </div>
             </div>
             <div class="carousel-item">
               <div class="carousel-box">
                 <p class="projectName">Project Name</p>
-                <p class="detailsLink">View more</p>
+                <label
+                  for="op"
+                  onclick="document.getElementById('owrap').className='show'"
+                  class="detailsLink"
+                >
+                  View more
+                </label>
                 <img src="../../img/projects/project (7).jpeg" />
               </div>
             </div>
             <div class="carousel-item">
               <div class="carousel-box">
                 <p class="projectName">Project Name</p>
-                <p class="detailsLink">View more</p>
+                <label
+                  for="op"
+                  onclick="document.getElementById('owrap').className='show'"
+                  class="detailsLink"
+                >
+                  View more
+                </label>
                 <img src="../../img/projects/project (8).jpeg" />
               </div>
             </div>
             <div class="carousel-item">
               <div class="carousel-box">
                 <p class="projectName">Project Name</p>
-                <p class="detailsLink">View more</p>
+                <label
+                  for="op"
+                  onclick="document.getElementById('owrap').className='show'"
+                  class="detailsLink"
+                >
+                  View more
+                </label>
                 <img src="../../img/projects/project (9).jpeg" />
               </div>
             </div>
             <div class="carousel-item">
               <div class="carousel-box">
                 <p class="projectName">Project Name</p>
-                <p class="detailsLink">View more</p>
+                <label
+                  for="op"
+                  onclick="document.getElementById('owrap').className='show'"
+                  class="detailsLink"
+                >
+                  View more
+                </label>
                 <img src="../../img/projects/project (10).JPG" />
               </div>
             </div>
           </div>
-
+          <input type="checkbox" id="op" />
           <div class="cursor"></div>
           <div class="cursor cursor2"></div>
         </section>
 
+        <!-- Project modal -->
+        <section class="modalWrapper">
+          <div class="modalContent" id="owrap">
+            <div id="obox"></div>
+            <div class="overlay overlay-hugeinc">
+              <label
+                for="op"
+                onclick="document.getElementById('owrap').className=''"
+              ></label>
+              <div class="timeline">
+                <div class="row-base row">
+                  <div class="col-base col-sm-6 col-md-5 mainImgDiv">
+                    <img
+                      class="mainProjectImg projectImg"
+                      src="../../img/projects/project (6).jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div></div>
+                  <div class="timeline__event animated fadeInUp delay-3s">
+                    <div class="timelineDot"></div>
+                    <div class="timelineContent">
+                      <h3 class="projectTitle">Project name</h3>
+                      <div class="timelineDescription">
+                        <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Vel, nam! Nam eveniet ut aliquam ab asperiores,
+                          accusamus iure veniam corporis incidunt reprehenderit
+                          accusantium id aut architecto harum quidem dolorem in!
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Vel, nam! Nam eveniet ut aliquam ab asperiores,
+                          accusamus iure veniam corporis incidunt
+                        </p>
+                        <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Vel, nam! Nam eveniet ut aliquam ab asperiores,
+                          accusamus iure veniam corporis incidunt reprehenderit
+                          accusantium id aut architecto harum quidem dolorem in!
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Vel, nam! Nam eveniet ut aliquam ab asperiores,
+                          accusamus iure veniam corporis incidunt
+                        </p>
+                        <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Vel, nam! Nam eveniet ut aliquam ab asperiores,
+                          accusamus iure veniam corporis incidunt reprehenderit
+                          accusantium id aut architecto harum quidem dolorem in!
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Vel, nam! Nam eveniet ut aliquam ab asperiores,
+                          accusamus iure veniam corporis incidunt
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- <div class="modal">
+          <input id="modal" type="checkbox" name="modal" tabindex="1" />
+          <label for="modal">Launch Modal</label>
+          <div class="modal__overlay">
+            <div class="modal__box">
+              <label for="modal">&#10006;</label>
+              <h2>Modal Title</h2>
+              <p>Modal Content</p>
+            </div>
+          </div>
+        </div> -->
+
         <!-- Footer -->
         <div w3-include-html="/assets/footer.html"></div>
+        <!-- Lines -->
+        <div w3-include-html="/assets/pageLines.html"></div>
       </div>
-
-      <!-- Lines -->
-      <div w3-include-html="/assets/pageLines.html"></div>
     </div>
 
     <!-- SCRIPTS -->
@@ -276,6 +407,7 @@
     <script src="/js/owl.carousel.min.js"></script>
     <script src="/js/includeHTML.js"></script>
     <script src="/js/projectGallery.js"></script>
+    <script src="/js/openModal.js"></script>
 
     <!-- SLIDER REVOLUTION -->
     <script src="/js/rev-slider/jquery.themepunch.tools.min.js"></script>
