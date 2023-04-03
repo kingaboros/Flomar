@@ -158,3 +158,31 @@ input:focus + label {
   -ms-transform: scale(0.97);
   transform: scale(0.97);
 }
+
+@media screen and (max-width: 499px) {
+  .colHeading {
+    margin: 5em 0 2em 0.8em;
+  }
+  .aboutText {
+    margin-left: 0;
+    width: 292px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .aboutText {
+    margin-left: 0;
+    width: auto;
+  }
+  .aboutFlomarColText {
+    margin-top: 5em;
+    text-align: left;
+    width: 10%;
+  }
+  .aboutCol {
+    width: 25%;
+  }
+  .colHeading {
+    margin-left: 11.9em;
+  }
+}

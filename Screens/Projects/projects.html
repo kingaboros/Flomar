@@ -33,13 +33,78 @@
     <link href="./projectStyles.css" rel="stylesheet" media="screen" />
     <link href="./galleryStyles.scss" rel="stylesheet" media="screen" />
   </head>
-  <body onclick="document.getElementById('owrap').className='show'">
+  <body>
     <!-- Header -->
     <div w3-include-html="/assets/header.html"></div>
 
-    <!-- Navigation  -->
-    <div w3-include-html="/assets/menu.html"></div>
+    <!-- Navigation Desktop -->
 
+    <nav class="navbar-desktop visible-md visible-lg">
+      <div class="container">
+        <a href="#top" class="brand js-target-scroll">
+          Flomar<span class="text-primary">.</span>
+        </a>
+        <ul class="nav navbar-desktop-menu">
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+          <li>
+            <a href="/screens/About/about.html">About</a>
+          </li>
+          <li class="active">
+            <a href="#projects">Proiecte</a>
+          </li>
+          <li>
+            <a href="#products">Produse</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Navigation Mobile -->
+
+    <nav class="nav navbar-mobile">
+      <a href="#top" class="brand js-target-scroll">
+        go<span class="text-primary">.</span>arch
+      </a>
+
+      <!-- Navbar Collapse -->
+
+      <button
+        type="button"
+        class="navbar-toggle collapsed"
+        data-toggle="collapse"
+        data-target="#navbar-mobile"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar-mobile">
+        <ul class="navbar-nav-mobile">
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+          <li>
+            <a href="/screens/About/about.html">About</a>
+          </li>
+          <li class="active">
+            <a href="/Screens/Projects/projects.html">Proiecte</a>
+          </li>
+          <li>
+            <a href="#products">Produse</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div class="layout">
       <div class="content">
         <!-- Map -->
@@ -167,7 +232,7 @@
           </div>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="projectsSection">
           <div class="container">
             <header class="section-header">
               <strong class="projectsHeading"
@@ -185,8 +250,8 @@
               <div class="carousel-box">
                 <p class="projectName">Project Name</p>
                 <label
-                  for="op"
-                  onclick="document.getElementById('owrap').className='show'"
+                  data-toggle="modal"
+                  data-target="#exampleModalLong"
                   class="detailsLink"
                 >
                   View more
@@ -198,8 +263,8 @@
               <div class="carousel-box">
                 <p class="projectName">Project Name</p>
                 <label
-                  for="op"
-                  onclick="document.getElementById('owrap').className='show'"
+                  data-toggle="modal"
+                  data-target="#exampleModalLong"
                   class="detailsLink"
                 >
                   View more
@@ -211,8 +276,8 @@
               <div class="carousel-box">
                 <p class="projectName">Project Name</p>
                 <label
-                  for="op"
-                  onclick="document.getElementById('owrap').className='show'"
+                  data-toggle="modal"
+                  data-target="#exampleModalLong"
                   class="detailsLink"
                 >
                   View more
@@ -224,8 +289,8 @@
               <div class="carousel-box">
                 <p class="projectName">Project Name</p>
                 <label
-                  for="op"
-                  onclick="document.getElementById('owrap').className='show'"
+                  data-toggle="modal"
+                  data-target="#exampleModalLong"
                   class="detailsLink"
                 >
                   View more
@@ -237,8 +302,8 @@
               <div class="carousel-box">
                 <p class="projectName">Project Name</p>
                 <label
-                  for="op"
-                  onclick="document.getElementById('owrap').className='show'"
+                  data-toggle="modal"
+                  data-target="#exampleModalLong"
                   class="detailsLink"
                 >
                   View more
@@ -250,8 +315,8 @@
               <div class="carousel-box">
                 <p class="projectName">Project Name</p>
                 <label
-                  for="op"
-                  onclick="document.getElementById('owrap').className='show'"
+                  data-toggle="modal"
+                  data-target="#exampleModalLong"
                   class="detailsLink"
                 >
                   View more
@@ -263,8 +328,8 @@
               <div class="carousel-box">
                 <p class="projectName">Project Name</p>
                 <label
-                  for="op"
-                  onclick="document.getElementById('owrap').className='show'"
+                  data-toggle="modal"
+                  data-target="#exampleModalLong"
                   class="detailsLink"
                 >
                   View more
@@ -276,8 +341,8 @@
               <div class="carousel-box">
                 <p class="projectName">Project Name</p>
                 <label
-                  for="op"
-                  onclick="document.getElementById('owrap').className='show'"
+                  data-toggle="modal"
+                  data-target="#exampleModalLong"
                   class="detailsLink"
                 >
                   View more
@@ -289,8 +354,8 @@
               <div class="carousel-box">
                 <p class="projectName">Project Name</p>
                 <label
-                  for="op"
-                  onclick="document.getElementById('owrap').className='show'"
+                  data-toggle="modal"
+                  data-target="#exampleModalLong"
                   class="detailsLink"
                 >
                   View more
@@ -302,8 +367,8 @@
               <div class="carousel-box">
                 <p class="projectName">Project Name</p>
                 <label
-                  for="op"
-                  onclick="document.getElementById('owrap').className='show'"
+                  data-toggle="modal"
+                  data-target="#exampleModalLong"
                   class="detailsLink"
                 >
                   View more
@@ -312,20 +377,32 @@
               </div>
             </div>
           </div>
-          <input type="checkbox" id="op" />
+          <!-- <input type="checkbox" id="op" /> -->
           <div class="cursor"></div>
           <div class="cursor cursor2"></div>
         </section>
 
         <!-- Project modal -->
-        <section class="modalWrapper">
-          <div class="modalContent" id="owrap">
-            <div id="obox"></div>
-            <div class="overlay overlay-hugeinc">
-              <label
-                for="op"
-                onclick="document.getElementById('owrap').className=''"
-              ></label>
+        <div
+          class="modal fade modalContainer"
+          id="exampleModalLong"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLongTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modalDiv" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="timeline">
                 <div class="row-base row">
                   <div class="col-base col-sm-6 col-md-5 mainImgDiv">
@@ -339,7 +416,9 @@
                   <div class="timeline__event animated fadeInUp delay-3s">
                     <div class="timelineDot"></div>
                     <div class="timelineContent">
-                      <h3 class="projectTitle">Project name</h3>
+                      <h3 class="projectTitle" id="exampleModalLongTitle">
+                        Project name
+                      </h3>
                       <div class="timelineDescription">
                         <p>
                           Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -375,20 +454,19 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        <!-- <div class="modal">
-          <input id="modal" type="checkbox" name="modal" tabindex="1" />
-          <label for="modal">Launch Modal</label>
-          <div class="modal__overlay">
-            <div class="modal__box">
-              <label for="modal">&#10006;</label>
-              <h2>Modal Title</h2>
-              <p>Modal Content</p>
-            </div>
+        <!-- Products section -->
+        <section id="products" class="productsSection">
+          <div class="container">
+            <header class="section-header">
+              <strong class="projectsHeading"
+                >Produse
+                <span class="text-primary">.</span>
+              </strong>
+            </header>
           </div>
-        </div> -->
-
+        </section>
         <!-- Footer -->
         <div w3-include-html="/assets/footer.html"></div>
         <!-- Lines -->

@@ -1,8 +1,5 @@
-body.show {
-  position: fixed;
-  overflow-x: hidden;
-  overflow-y: scroll !important;
-  height: 500px;
+.projectsSection {
+  padding-top: 10em;
 }
 
 .modalOpen {
@@ -25,8 +22,7 @@ body.show {
 /* Project gallery styles */
 
 .gallerySection {
-  z-index: 0;
-  position: relative;
+  margin-bottom: 10em;
 }
 
 .carousel {
@@ -192,6 +188,27 @@ img {
 }
 
 /* project modal */
+
+body.modal-open {
+  overflow: hidden !important;
+}
+
+.modalContainer {
+  margin: 0;
+  padding: 0 !important ;
+}
+
+.closeBtn {
+  padding-right: 10px;
+}
+
+.modalDiv {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  height: 100vh;
+  z-index: 999;
+}
 
 .modalWrapper {
   z-index: 9999;
@@ -499,3 +516,23 @@ input {
   background-color: orange;
 }
 
+/* Products section*/
+
+.productsSection {
+  padding-top: 12em;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 600px) {
+  .projectMission {
+    margin: 5em 1em;
+  }
+  .projectsHeading {
+    margin: 2em auto;
+    font-size: 4rem;
+  }
+  .gallerySection {
+    margin-top: -26rem;
+  }
+}

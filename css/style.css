@@ -666,9 +666,25 @@ label.error {
   height: auto;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .header-phone {
     display: none;
+  }
+  .section-header {
+    padding-bottom: 5em;
+  }
+  .experience-info {
+    top: 0.25em !important;
+  }
+  .section {
+    padding-top: 10.1em;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 1000px) {
+  .navbar-mobile {
+    z-index: 6;
+    padding: 0;
   }
 }
 
@@ -895,7 +911,7 @@ label.error {
 
 .navbar-mobile {
   position: absolute;
-  z-index: 2;
+  z-index: 6;
   left: 0;
   top: 0;
   width: 100%;
@@ -1509,7 +1525,6 @@ img.mfp-img {
   font-size: 16em;
   line-height: 1;
   overflow: hidden;
-  margin: -9px;
   background: var(--backgroundColor);
   color: #363636;
   mix-blend-mode: lighten;
