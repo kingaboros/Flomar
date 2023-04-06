@@ -32,8 +32,12 @@
 }
 
 .colHeading {
-  margin-top: 10em;
+  margin-top: 4em;
   margin-left: 12.9em;
+}
+
+.aboutTitleCol {
+  margin-top: 11em;
 }
 
 .aboutCol {
@@ -43,6 +47,37 @@
 .aboutText {
   margin-left: -94px;
   width: 353px;
+}
+
+.teamSection {
+  margin-top: 4em;
+}
+
+.teamTextCol {
+  padding-top: 6em;
+}
+
+.teamTitle {
+  margin-bottom: 2.1em;
+  text-align: center;
+}
+
+.missionTitle {
+  margin-bottom: 1.5em;
+}
+
+.missionSubtitle {
+  margin-bottom: 0.5em;
+  margin-top: 0;
+}
+
+.fadeTitleMission {
+  left: 81%;
+  top: 1em;
+}
+
+.missionTextCol {
+  padding-top: 3em;
 }
 
 /* ////////////////////////////// */

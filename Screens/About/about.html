@@ -28,15 +28,89 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
       rel="stylesheet"
     />
-    <link href="/css/style.css" rel="stylesheet" media="screen" />
+    <link href="../../css/style.css" rel="stylesheet" media="screen" />
     <link href="./aboutStyles.css" rel="stylesheet" media="screen" />
   </head>
   <body>
     <!-- Header -->
     <div w3-include-html="/assets/header.html"></div>
 
-    <!-- Navigation  -->
-    <div w3-include-html="/assets/menu.html"></div>
+    <!-- Navigation Desktop -->
+
+    <nav class="navbar-desktop visible-md visible-lg">
+      <div class="container">
+        <a href="#top" class="brand js-target-scroll">
+          Flomar<span class="text-primary">.</span>
+        </a>
+        <ul class="nav navbar-desktop-menu">
+          <li>
+            <a href="/index.html">Acasă</a>
+          </li>
+          <li class="active">
+            <a href="./about.html">Despre noi</a>
+          </li>
+          <li>
+            <a href="../Projects/projects.html">Proiecte</a>
+          </li>
+          <li>
+            <a
+              href="../Projects/projects.html#products"
+              class="js-target-scroll"
+              >Produse</a
+            >
+          </li>
+          <li>
+            <a href="../Contact/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Navigation Mobile -->
+
+    <nav class="nav navbar-mobile">
+      <a href="#top" class="brand js-target-scroll">
+        go<span class="text-primary">.</span>arch
+      </a>
+
+      <!-- Navbar Collapse -->
+
+      <button
+        type="button"
+        class="navbar-toggle collapsed"
+        data-toggle="collapse"
+        data-target="#navbar-mobile"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar-mobile">
+        <ul class="navbar-nav-mobile">
+          <li>
+            <a href="/index.html">Acasă</a>
+          </li>
+          <li class="active">
+            <a href="./about.html">Despre noi</a>
+          </li>
+          <li>
+            <a href="../Projects/projects.html">Proiecte</a>
+          </li>
+          <li>
+            <a
+              href="../Projects/projects.html#products"
+              class="js-target-scroll"
+              >Produse</a
+            >
+          </li>
+          <li>
+            <a href="../Contact/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <div class="layout">
       <!-- About header -->
@@ -50,117 +124,151 @@
       </section>
       <div class="content">
         <!-- About  -->
-
-        <section id="about" class="about section">
+        <div w3-include-html="/assets/aboutSection.html"></div>
+        <h3 class="col-about-title colHeading">
+          <span class="text-primary">.</span> realizăm vise din structuri
+          metalice
+        </h3>
+        <div class="container">
+          <div class="row-base row">
+            <div class="col-base col-sm-3 col-md-3 aboutTitleCol">
+              <div class="col-about-info">
+                <h2 class="section-title">
+                  despre <span class="text-primary">.FLOMAR</span>
+                </h2>
+              </div>
+            </div>
+            <div class="col-base col-sm-3 col-md-3 aboutCol">
+              <div class="col-about-info aboutText">
+                <p>
+                  De-a lungul anilor, Flomar a acumulat o experiență vastă în
+                  industria metalurgică și își dedica resursele și energia
+                  pentru a oferi soluții inovatoare și de calitate pentru
+                  fiecare proiect la care lucrează. Compania se concentrează pe
+                  a satisface nevoile clienților săi, prin colaborarea strânsă
+                  cu aceștia pentru a identifica și înțelege cerințele specifice
+                  ale fiecăruia dintre proiectele lor
+                </p>
+              </div>
+            </div>
+            <div class="col-base col-sm-3 col-md-3 aboutCol">
+              <div class="col-about-info aboutText">
+                <p>
+                  O altă valoare fundamentală a companiei este accentul pus pe
+                  echipa sa, și pe un mediu unde angajații se pot dezvolta
+                  personal și profesional. Flomar oferă oportunități de formare
+                  și dezvoltare a competențelor pentru a asigura că angajații
+                  lor sunt întotdeauna la curent cu cele mai recente tehnologii
+                  și metodologii din domeniul lor de activitate.
+                </p>
+              </div>
+            </div>
+            <div class="col-base col-sm-3 col-md-3 aboutCol">
+              <div class="col-about-info aboutText">
+                <p>
+                  Această abordare a dus la o cultură de muncă pozitivă și un
+                  mediu de lucru productiv, care se reflectă în calitatea
+                  produselor și satisfacția clienților Cu o echipă talentată și
+                  o abordare personalizată în producția de confecții metalice,
+                  Flomar este o companie de încredere pentru clienții care caută
+                  produse de calitate și servicii personalizate, și o locație
+                  atractivă pentru cei care doresc să se alăture unei echipe
+                  dinamice și dedicate
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Our team -->
+        <section id="team" class="section">
           <div class="container">
             <header class="section-header">
-              <h2 class="section-title">
-                About <span class="text-primary">.FLOMAR</span>
+              <h2 class="section-title text-primary">
+                echipa <span class="darkTitle">noastră</span>
               </h2>
-              <strong class="fade-title-left">About</strong>
+              <strong class="fade-title-right">echipă</strong>
             </header>
             <div class="section-content">
+              <h3 class="teamTitle">
+                <span class="text-primary">.</span>structura pe care te poți
+                baza
+              </h3>
               <div class="row-base row">
                 <div class="col-base col-sm-6 col-md-4">
-                  <h3 class="col-about-title">
-                    <span class="text-primary">.</span> we turn ideas into works
-                    of art
-                  </h3>
-                  <div class="col-about-info">
+                  <div class="col-about-info teamTextCol">
                     <p>
-                      For each project we establish relationships with partners
-                      who we know will help us create added value for your
-                      project. As well as bringing together the public and
-                      private sectors, we make sector-overarching links to
-                      gather knowledge and to learn from each other. The way we
-                      undertake projects is based on permanently applying values
-                      that reinforce each other: socio-cultural value,
-                      experiental value, building-technical value and economical
-                      value.
+                      Flomar este o companie care pune accent pe o cultură a
+                      echipelor, unde angajații se pot dezvolta personal și
+                      profesional. Acest lucru se datorează în mare parte
+                      dorinței de a crea un mediu de lucru pozitiv și de
+                      susținere, care încurajează angajații să-și atingă
+                      potențialul.
                     </p>
-                  </div>
-                </div>
-                <div class="col-base col-about-spec col-sm-6 col-md-4">
-                  <h3 class="col-about-title">
-                    our<br />
-                    specialization<span class="text-primary">:</span>
-                  </h3>
-                  <div class="service-item">
-                    <img alt="" src="/img/img-icon/icon-architecture.png" />
-                    <h4>Architecture</h4>
-                  </div>
-                  <div class="service-item">
-                    <img alt="" src="/img/img-icon/icon-interiors.png" />
-                    <h4>Interiors</h4>
-                  </div>
-                  <div class="service-item">
-                    <img alt="" src="/img/img-icon/icon-planing.png" />
-                    <h4>Planing</h4>
                   </div>
                 </div>
                 <div class="clearfix visible-sm"></div>
                 <div class="col-base col-about-img col-sm-6 col-md-4">
                   <img alt="" class="img-responsive" src="/img/380x370.jpg" />
                 </div>
+                <div class="col-base col-sm-6 col-md-4">
+                  <div class="col-about-info teamTextCol">
+                    <p>
+                      Fie ingineri, tehnicieni sau operatori, toți membrii
+                      echipei sunt la fel de importanți și își aduc contribuția
+                      la succesul Flomar. În plus, compania este formată dintr-o
+                      echipă diversă, care apreciază varietatea de experiențe și
+                      abilități pe care fiecare membru le aduce. Diversitatea
+                      face echipa Flomar mai puternica și ajută în abordarea
+                      problemelor din mai multe perspective
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
-          <h3 class="col-about-title colHeading">
-            <span class="text-primary">.</span> lorem impsum
-          </h3>
+        </section>
+        <!-- Mission section -->
+        <section id="mission" class="section">
           <div class="container">
-            <div class="row-base row">
-              <div class="col-base col-sm-3 col-md-3">
-                <div class="col-about-info">
-                  <h2 class="section-title">
-                    About <span class="text-primary">.FLOMAR</span>
+            <div class="section-content">
+              <div class="row-base row">
+                <header class="section-header missionTitle">
+                  <h2 class="section-title text-primary">
+                    misiunea <span class="darkTitle">.flomar</span>
                   </h2>
+                  <strong class="fade-title-right fadeTitleMission"
+                    >misiune</strong
+                  >
+                </header>
+                <div class="col-base col-sm-6 col-md-6">
+                  <h3 class="missionSubtitle">
+                    <span class="text-primary">.</span>calitate
+                    <span class="text-primary">.</span>inovare
+                    <span class="text-primary">.</span>personalizare
+                  </h3>
+                  <div class="col-about-info">
+                    <p>
+                      Misiunea Flomar este de a produce produse metalice de
+                      înaltă calitate, inovatoare și personalizate, care să
+                      satisfacă nevoile și cerințele clienților, indiferent de
+                      complexitatea proiectelor lor. Compania își propune să își
+                      asume responsabilitatea față de mediul înconjurător, să
+                      ofere un mediu de lucru sigur și să își susțină angajații
+                      pentru a se dezvolta profesional.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="col-base col-sm-3 col-md-3 aboutCol">
-                <div class="col-about-info aboutText">
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop .
-                  </p>
-                </div>
-              </div>
-              <div class="col-base col-sm-3 col-md-3 aboutCol">
-                <div class="col-about-info aboutText">
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop .
-                  </p>
-                </div>
-              </div>
-              <div class="col-base col-sm-3 col-md-3 aboutCol">
-                <div class="col-about-info aboutText">
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop .
-                  </p>
+                <div class="clearfix visible-sm"></div>
+                <div class="col-base col-sm-6 col-md-6">
+                  <div class="col-about-info missionTextCol">
+                    <p>
+                      Prin furnizarea de servicii personalizate și soluții de
+                      înaltă calitate, Flomar își propune să devină un lider pe
+                      piața de confecții metalice personalizate și să își
+                      mențină poziția prin îmbunătățirea continuă a proceselor
+                      de producție și a relațiilor cu clienții.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -182,8 +290,8 @@
               <div class="text-parallax-content">18</div>
             </div>
             <h4 class="experience-info wow fadeInRight">
-              <span class="text-primary">Years of successful work</span><br />
-              in the market
+              <span class="text-primary">ani experiență</span><br />
+              și un portofoliu vast de clienți
             </h4>
           </div>
         </section>
@@ -197,7 +305,7 @@
           <div class="container">
             <header class="section-header">
               <h2 class="section-title">
-                We are <span class="text-primary">worldwide</span>
+                suntem <span class="text-primary">internaționali</span>
               </h2>
             </header>
             <div class="section-content">

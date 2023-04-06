@@ -1,0 +1,62 @@
+@import url('./theme/theme.css');
+
+.contactSection {
+  margin-top: 15em;
+}
+
+.contactHeading {
+  text-align: right;
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+  font-size: 10em;
+}
+
+.contactImgDiv {
+  margin-left: 14em;
+}
+
+.verticalHeading {
+  position: relative;
+  float: left;
+  top: 2em;
+  right: 4em;
+  transform: rotate(-90deg);
+  font-size: 7em;
+  text-align: center;
+}
+
+/* form styles */
+
+.formContainer {
+  position: relative;
+  width: 55%;
+  float: right;
+  background-color: var(--modalBg);
+  padding: 4em;
+  z-index: 3;
+  margin-top: -28em;
+  margin-bottom: 23em;
+  height: 100vh;
+}
+
+.form-group {
+  margin-bottom: 3em;
+}
+
+.form-control,
+.textarea.form-control {
+  background-color: transparent !important;
+  border-color: white;
+  color: white;
+}
+
+.form-control::placeholder {
+  color: white;
+}
+
+.contactBtn,
+.contactBtn:hover {
+  background-color: transparent;
+  border: 1px solid var(--mainColor);
+}

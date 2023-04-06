@@ -1,8 +1,11 @@
 :root {
   --mainColor: #f40000;
+  --darkText: #3d3d3d;
   --lighterMain: #ec6161;
   --backgroundColor: #cdcdcd;
   --shadowColor: rgba(244, 0, 0, 0.29);
   --redBackground: rgba(240, 85, 85, 0.84);
   --overlay: rgba(78, 73, 70, 0.96);
+  --modalBg: #222222;
+  --iconColor: #c5c4c2;
 }

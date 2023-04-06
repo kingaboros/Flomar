@@ -536,6 +536,10 @@ label.error {
   margin-left: 0.32em;
 }
 
+.darkTitle {
+  color: var(--darkText);
+}
+
 .fade-title-left,
 .fade-title-right,
 .fade-title-center {

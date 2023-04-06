@@ -90,9 +90,82 @@
         </ul>
       </div>
 
-      <!-- Navigation -->
+      <!-- Navigation Desktop -->
 
-      <div w3-include-html="/assets/menu.html"></div>
+      <nav class="navbar-desktop visible-md visible-lg">
+        <div class="container">
+          <a href="#top" class="brand js-target-scroll">
+            Flomar<span class="text-primary">.</span>
+          </a>
+          <ul class="nav navbar-desktop-menu">
+            <li class="active">
+              <a href="/index.html">Acasă</a>
+            </li>
+            <li>
+              <a href="/Screens/About/about.html">Despre noi</a>
+            </li>
+            <li>
+              <a href="/Screens/Projects/projects.html">Proiecte</a>
+            </li>
+            <li>
+              <a
+                href="/Screens/Projects/projects.html#products"
+                class="js-target-scroll"
+                >Produse</a
+              >
+            </li>
+            <li>
+              <a href="/Screens/Contact/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Navigation Mobile -->
+
+      <nav class="nav navbar-mobile">
+        <a href="#top" class="brand js-target-scroll">
+          go<span class="text-primary">.</span>arch
+        </a>
+
+        <!-- Navbar Collapse -->
+
+        <button
+          type="button"
+          class="navbar-toggle collapsed"
+          data-toggle="collapse"
+          data-target="#navbar-mobile"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-mobile">
+          <ul class="navbar-nav-mobile">
+            <li class="active">
+              <a href="/index.html">Acasă</a>
+            </li>
+            <li>
+              <a href="/screens/About/about.html">Despre noi</a>
+            </li>
+            <li>
+              <a href="/Screens/Projects/projects.html">Proiecte</a>
+            </li>
+            <li>
+              <a
+                href="/Screens/Projects/projects.html#products"
+                class="js-target-scroll"
+                >Produse</a
+              >
+            </li>
+            <li>
+              <a href="/Screens/Contact/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <!-- Layout -->
@@ -416,66 +489,8 @@
 
       <div class="content">
         <!-- About  -->
-
-        <section id="about" class="about section">
-          <div class="container">
-            <header class="section-header">
-              <h2 class="section-title">
-                About <span class="text-primary">.FLOMAR</span>
-              </h2>
-              <strong class="fade-title-left">About</strong>
-            </header>
-            <div class="section-content">
-              <div class="row-base row">
-                <div class="col-base col-sm-6 col-md-4">
-                  <h3 class="col-about-title">
-                    we turn ideas into works of art<span class="text-primary"
-                      >.</span
-                    >
-                  </h3>
-                  <div class="col-about-info">
-                    <p>
-                      For each project we establish relationships with partners
-                      who we know will help us create added value for your
-                      project. As well as bringing together the public and
-                      private sectors, we make sector-overarching links to
-                      gather knowledge and to learn from each other. The way we
-                      undertake projects is based on permanently applying values
-                      that reinforce each other: socio-cultural value,
-                      experiental value, building-technical value and economical
-                      value.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-base col-about-spec col-sm-6 col-md-4">
-                  <h3 class="col-about-title">
-                    our<br />
-                    specialization<span class="text-primary">:</span>
-                  </h3>
-                  <div class="service-item">
-                    <img alt="" src="img/img-icon/icon-architecture.png" />
-                    <h4>Architecture</h4>
-                  </div>
-                  <div class="service-item">
-                    <img alt="" src="img/img-icon/icon-interiors.png" />
-                    <h4>Interiors</h4>
-                  </div>
-                  <div class="service-item">
-                    <img alt="" src="img/img-icon/icon-planing.png" />
-                    <h4>Planing</h4>
-                  </div>
-                </div>
-                <div class="clearfix visible-sm"></div>
-                <div class="col-base col-about-img col-sm-6 col-md-4">
-                  <img alt="" class="img-responsive" src="img/380x370.jpg" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
+        <div w3-include-html="/assets/aboutSection.html"></div>
         <!-- Projects -->
-
         <section id="projects" class="projects section">
           <div class="container">
             <h2 class="section-title">

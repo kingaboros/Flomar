@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | Flomar</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-touch-icon-114x114.png"
+    />
+
+    <!-- Styles -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:300,400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+    />
+    <link href="../../css/style.css" rel="stylesheet" media="screen" />
+    <link href="../About/aboutStyles.css" rel="stylesheet" media="screen" />
+    <link href="./contactStyles.css" rel="stylesheet" media="screen" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div w3-include-html="/assets/header.html"></div>
+    <!-- Navigation Desktop -->
+
+    <nav class="navbar-desktop visible-md visible-lg">
+      <div class="container">
+        <a href="#top" class="brand js-target-scroll">
+          Flomar<span class="text-primary">.</span>
+        </a>
+        <ul class="nav navbar-desktop-menu">
+          <li>
+            <a href="/index.html">Acasă</a>
+          </li>
+          <li>
+            <a href="./about.html">Despre noi</a>
+          </li>
+          <li>
+            <a href="../Projects/projects.html">Proiecte</a>
+          </li>
+          <li>
+            <a
+              href="../Projects/projects.html#products"
+              class="js-target-scroll"
+              >Produse</a
+            >
+          </li>
+          <li class="active">
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Navigation Mobile -->
+
+    <nav class="nav navbar-mobile">
+      <a href="#top" class="brand js-target-scroll">
+        go<span class="text-primary">.</span>arch
+      </a>
+
+      <!-- Navbar Collapse -->
+
+      <button
+        type="button"
+        class="navbar-toggle collapsed"
+        data-toggle="collapse"
+        data-target="#navbar-mobile"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar-mobile">
+        <ul class="navbar-nav-mobile">
+          <li>
+            <a href="/index.html">Acasă</a>
+          </li>
+          <li>
+            <a href="./about.html">Despre noi</a>
+          </li>
+          <li>
+            <a href="../Projects/projects.html">Proiecte</a>
+          </li>
+          <li>
+            <a
+              href="../Projects/projects.html#products"
+              class="js-target-scroll"
+              >Produse</a
+            >
+          </li>
+          <li class="active">
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="layout">
+      <div class="content">
+        <section class="section contactSection">
+          <div class="container">
+            <header class="section-header">
+              <strong class="contactHeading"
+                >Contact
+                <span class="text-primary">.</span>
+              </strong>
+            </header>
+
+            <div class="contactImgDiv">
+              <img
+                class="contactImg"
+                src="../../img/final/contact.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <header class="section-header">
+                <strong class="contactHeading verticalHeading"
+                  >structura pe care te poți baza
+                  <span class="text-primary">.</span>
+                </strong>
+              </header>
+            </div>
+            <div class="col">
+              <div class="formContainer">
+                <form class="js-ajax-form">
+                  <div class="row-field row">
+                    <div class="col-field">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="name"
+                          placeholder="Nume"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control"
+                          name="email"
+                          required
+                          placeholder="Email *"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="tel"
+                          class="form-control"
+                          name="phone"
+                          placeholder="Telefon"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="company"
+                          placeholder="Firmă"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <textarea
+                          class="form-control"
+                          name="message"
+                          placeholder="Mesaj"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-message col-field col-sm-12">
+                      <div class="form-group">
+                        <div class="success-message">
+                          <i class="fa fa-check text-primary"></i> Mulțumim!
+                          Mesajul tău a fost trimis cu succes.
+                        </div>
+                        <div class="error-message">
+                          Ne pare rău, s-a produs o eroare.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-submit text-left">
+                    <button
+                      type="submit"
+                      class="btn contactBtn btn-shadow-2 wow swing"
+                    >
+                      Trimite <i class="icon-next"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <div w3-include-html="/assets/footer.html"></div>
+
+        <!-- Lines -->
+        <div w3-include-html="/assets/pageLines.html"></div>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/smoothscroll.js"></script>
+    <script src="/js/jquery.validate.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/jquery.stellar.min.js"></script>
+    <script src="/js/jquery.magnific-popup.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/includeHTML.js"></script>
+
+    <!-- SLIDER REVOLUTION -->
+    <script src="/js/rev-slider/jquery.themepunch.tools.min.js"></script>
+    <script src="/js/rev-slider/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS   -->
+    <script src="/js/rev-slider/revolution.extension.actions.min.js"></script>
+    <script src="/js/rev-slider/revolution.extension.carousel.min.js"></script>
+    <script src="/js/rev-slider/revolution.extension.kenburn.min.js"></script>
+    <script src="/js/rev-slider/revolution.extension.layeranimation.min.js"></script>
+    <script src="/js/rev-slider/revolution.extension.migration.min.js"></script>
+    <script src="/js/rev-slider/revolution.extension.navigation.min.js"></script>
+    <script src="/js/rev-slider/revolution.extension.parallax.min.js"></script>
+    <script src="/js/rev-slider/revolution.extension.slideanims.min.js"></script>
+    <script src="/js/rev-slider/revolution.extension.video.min.js"></script>
+    <script src="/js/interface.js"></script>
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>
