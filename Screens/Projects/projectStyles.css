@@ -8,7 +8,7 @@
 }
 
 .projectMission {
-  margin: 8em 0 8em 25em;
+  margin: 8em 0 8em 4em;
 }
 
 .projectsHeading {
@@ -105,8 +105,8 @@
 
 .detailsLink:hover {
   cursor: pointer;
-  text-decoration: underline;
-  text-decoration-color: var(--mainColor);
+  text-decoration: none;
+  /* text-decoration-color: var(--mainColor); */
   color: white;
 }
 

@@ -37,7 +37,6 @@
   z-index: 3;
   margin-top: -28em;
   margin-bottom: 23em;
-  height: 100vh;
 }
 
 .form-group {
@@ -52,11 +51,20 @@
 }
 
 .form-control::placeholder {
-  color: white;
+  color: white !important;
+}
+
+.textarea.form-control:placeholder-shown {
+  color: white !important;
 }
 
 .contactBtn,
 .contactBtn:hover {
   background-color: transparent;
   border: 1px solid var(--mainColor);
+}
+
+.contactDesc {
+  color: white;
+  padding-bottom: 10px;
 }

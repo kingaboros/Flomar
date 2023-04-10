@@ -58,6 +58,7 @@
   height: clamp(200px, 44vw, 40em);
   width: clamp(150px, 40vw, 45em);
   z-index: 5;
+  object-fit: cover;
 }
 
 .secondImg {
@@ -163,7 +164,7 @@
   padding-bottom: 20px;
   position: relative;
   left: 36%;
-  top: -37%;
+  top: -46%;
 }
 
 .modalRow {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Details | Project 1</title>
+    <title>Gardaland</title>
     <!-- Favicons -->
     <link rel="shortcut icon" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -142,35 +142,22 @@
           <div class="row-base row modalRow">
             <div class="col-base col-sm-6 col-md-6 mainImgDiv">
               <img
-                class="mainProjectImg projectImg"
-                src="../../../img/projects/project (5).jpeg"
+                id="mainImg"
+                class="mainProjectImg projectImg animated fadeInUp delay-3s"
+                src="../../../img/projects/gardaland/overview.JPG"
                 alt=""
               />
             </div>
             <div class="col-base">
-              <div class="timeline__event animated fadeInUp delay-3s">
+              <div class="timeline__event">
                 <div class="timelineDot"></div>
                 <div class="timelineContent">
-                  <h3 class="projectTitle">Project name</h3>
+                  <h3
+                    id="projectName"
+                    class="projectTitle animated fadeInUp delay-3s"
+                  ></h3>
                   <div class="timelineDescription">
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus
-                      iure veniam corporis incidunt reprehenderit accusantium id
-                      aut architecto harum quidem dolorem in! Lorem, ipsum dolor
-                      sit amet consectetur adipisicing elit. Vel, nam! Nam
-                      eveniet ut aliquam ab asperiores, accusamus iure veniam
-                      corporis incidunt
-                    </p>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus
-                      iure veniam corporis incidunt reprehenderit accusantium id
-                      aut architecto harum quidem dolorem in! Lorem, ipsum dolor
-                      sit amet consectetur adipisicing elit. Vel, nam! Nam
-                      eveniet ut aliquam ab asperiores, accusamus iure veniam
-                      corporis incidunt
-                    </p>
+                    <p id="p1"></p>
                   </div>
                 </div>
               </div>
@@ -179,37 +166,23 @@
           <div class="row-base row">
             <img
               class="projectImg secondImg"
-              src="../../../img/projects/project (2).jpeg"
+              src="../../../img/projects/gardaland/mammut.JPG"
               alt=""
             />
             <div class="timelineDescription secondDesc">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
-                nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam
-                corporis incidunt reprehenderit accusantium id aut architecto
-                harum quidem dolorem in! Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab
-                asperiores, accusamus iure veniam corporis incidunt
-              </p>
+              <p id="p2"></p>
             </div>
           </div>
           <div class="row-base row thirdRow">
             <div class="col-base col-sm-6 col-md-6">
               <div class="thirdDesc timelineDescription">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
-                  nam! Nam eveniet ut aliquam ab asperiores, accusamus iure
-                  veniam corporis incidunt reprehenderit accusantium id aut
-                  architecto harum quidem dolorem in! Lorem, ipsum dolor sit
-                  amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut
-                  aliquam ab asperiores, accusamus iure veniam corporis incidunt
-                </p>
+                <p id="p3"></p>
               </div>
             </div>
             <div class="col-base">
               <img
                 class="projectImg thirdImg"
-                src="../../../img/projects/project (8).jpeg"
+                src="../../../img/projects/gardaland/gardaland3.jpg"
                 alt=""
               />
             </div>
@@ -225,6 +198,15 @@
     <script src="/js/includeHTML.js"></script>
     <script>
       includeHTML();
+      fetch('projectsData.json')
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data[0].name);
+          document.querySelector('#projectName').innerHTML = data[0].name;
+          document.querySelector('#p1').innerHTML = data[0].p1;
+          document.querySelector('#p2').innerHTML = data[0].p2;
+          document.querySelector('#p3').innerHTML = data[0].p3;
+        });
     </script>
   </body>
 </html>
