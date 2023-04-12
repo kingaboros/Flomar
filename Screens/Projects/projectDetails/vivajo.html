@@ -76,7 +76,7 @@
           <li>
             <a href="../../About/about.html">Despre noi</a>
           </li>
-          <li class="active">
+          <li>
             <a href="../projects.html">Proiecte</a>
           </li>
           <li>
@@ -120,7 +120,7 @@
           <li>
             <a href="../../About/about.html">Despre noi</a>
           </li>
-          <li class="active">
+          <li>
             <a href="../projects.html">Proiecte</a>
           </li>
           <li>
@@ -140,7 +140,7 @@
       <div class="content">
         <div class="timeline">
           <div class="row-base row modalRow">
-            <div class="col-base col-sm-6 col-md-6 mainImgDiv">
+            <div class="col-base col-sm-12 col-md-6 mainImgDiv">
               <img
                 id="mainImg"
                 class="mainProjectImg projectImg animated fadeInUp delay-3s"
@@ -150,13 +150,12 @@
             </div>
             <div class="col-base">
               <div class="timeline__event">
-                <div class="timelineDot"></div>
                 <div class="timelineContent">
                   <h3
                     id="projectName"
                     class="projectTitle animated fadeInUp delay-3s"
                   ></h3>
-                  <div class="timelineDescription">
+                  <div class="timelineDescription firstDesc">
                     <p id="p1"></p>
                   </div>
                 </div>
@@ -169,12 +168,14 @@
               src="../../../img/projects/gardaland/mammut.JPG"
               alt=""
             />
-            <div class="timelineDescription secondDesc">
-              <p id="p2"></p>
+            <div class="timelineContent">
+              <div class="timelineDescription secondDesc">
+                <p id="p2"></p>
+              </div>
             </div>
           </div>
           <div class="row-base row thirdRow">
-            <div class="col-base col-sm-6 col-md-6">
+            <div class="col-base col-sm-12 col-md-6">
               <div class="thirdDesc timelineDescription">
                 <p id="p3"></p>
               </div>
@@ -201,11 +202,11 @@
       fetch('projectsData.json')
         .then((response) => response.json())
         .then((data) => {
-          console.log(data[0].name);
-          document.querySelector('#projectName').innerHTML = data[0].name;
-          document.querySelector('#p1').innerHTML = data[0].p1;
-          document.querySelector('#p2').innerHTML = data[0].p2;
-          document.querySelector('#p3').innerHTML = data[0].p3;
+          console.log(data[3].name);
+          document.querySelector('#projectName').innerHTML = data[3].name;
+          document.querySelector('#p1').innerHTML = data[3].p1;
+          document.querySelector('#p2').innerHTML = data[3].p2;
+          document.querySelector('#p3').innerHTML = data[3].p3;
         });
     </script>
   </body>

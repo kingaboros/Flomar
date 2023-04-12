@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gardaland</title>
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-touch-icon-114x114.png"
+    />
+
+    <!-- Styles -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:300,400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+    />
+    <link href="../../../css/style.css" rel="stylesheet" media="screen" />
+    <link rel="stylesheet" href="./detailStyles.css" />
+    <link href="../../About/aboutStyles.css" rel="stylesheet" media="screen" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="top" class="header-home">
+      <div class="brand-panel modalBrand">
+        <a href="#top" class="brand js-target-scroll">
+          <img
+            class="headerLogo"
+            src="/img/flomar-logo.png"
+            alt="flomar logo"
+          />
+        </a>
+      </div>
+      <div class="header-phone">+7 (212) 674-25-10</div>
+      <div class="vertical-panel verticalPanel"></div>
+      <div class="vertical-panel-content">
+        <div class="vertical-panel-info">
+          <div class="vertical-panel-title verticalTitle">
+            Flomar Confectii Metalice
+          </div>
+          <div class="line"></div>
+        </div>
+        <ul class="social-list">
+          <li><a href="" class="fa fa-instagram"></a></li>
+          <li><a href="" class="fa fa-twitter"></a></li>
+          <li><a href="" class="fa fa-behance"></a></li>
+          <li><a href="" class="fa fa-facebook"></a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Navigation Desktop -->
+
+    <nav class="navbar-desktop visible-md visible-lg">
+      <div class="container">
+        <a href="#top" class="brand js-target-scroll">
+          Flomar<span class="text-primary">.</span>
+        </a>
+        <ul class="nav navbar-desktop-menu">
+          <li>
+            <a href="/index.html">Acasă</a>
+          </li>
+          <li>
+            <a href="../../About/about.html">Despre noi</a>
+          </li>
+          <li>
+            <a href="../projects.html">Proiecte</a>
+          </li>
+          <li>
+            <a href="../projects.html#products" class="js-target-scroll"
+              >Produse</a
+            >
+          </li>
+          <li>
+            <a href="../../Contact/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Navigation Mobile -->
+
+    <nav class="nav navbar-mobile">
+      <a href="#top" class="brand js-target-scroll">
+        go<span class="text-primary">.</span>arch
+      </a>
+
+      <!-- Navbar Collapse -->
+
+      <button
+        type="button"
+        class="navbar-toggle collapsed"
+        data-toggle="collapse"
+        data-target="#navbar-mobile"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar-mobile">
+        <ul class="navbar-nav-mobile">
+          <li>
+            <a href="/index.html">Acasă</a>
+          </li>
+          <li>
+            <a href="../../About/about.html">Despre noi</a>
+          </li>
+          <li>
+            <a href="../projects.html">Proiecte</a>
+          </li>
+          <li>
+            <a href="../projects.html#products" class="js-target-scroll"
+              >Produse</a
+            >
+          </li>
+          <li>
+            <a href="../../Contact/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page content -->
+    <div class="layout modalLayout">
+      <div class="content">
+        <div class="timeline">
+          <div class="row-base row modalRow">
+            <div class="col-base col-sm-12 col-md-6 mainImgDiv">
+              <img
+                id="mainImg"
+                class="mainProjectImg projectImg animated fadeInUp delay-3s"
+                src="../../../img/projects/gardaland/overview.JPG"
+                alt=""
+              />
+            </div>
+            <div class="col-base">
+              <div class="timeline__event">
+                <div class="timelineContent">
+                  <h3
+                    id="projectName"
+                    class="projectTitle animated fadeInUp delay-3s"
+                  ></h3>
+                  <div class="timelineDescription firstDesc">
+                    <p id="p1"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row-base row">
+            <img
+              class="projectImg secondImg"
+              src="../../../img/projects/gardaland/mammut.JPG"
+              alt=""
+            />
+            <div class="timelineContent">
+              <div class="timelineDescription secondDesc">
+                <p id="p2"></p>
+              </div>
+            </div>
+          </div>
+          <div class="row-base row thirdRow">
+            <div class="col-base col-sm-12 col-md-6">
+              <div class="thirdDesc timelineDescription">
+                <p id="p3"></p>
+              </div>
+            </div>
+            <div class="col-base">
+              <img
+                class="projectImg thirdImg"
+                src="../../../img/projects/gardaland/gardaland3.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div w3-include-html="/assets/footer.html"></div>
+      <!-- Lines -->
+      <div w3-include-html="/assets/pageLines.html"></div>
+    </div>
+    <script src="/js/includeHTML.js"></script>
+    <script>
+      includeHTML();
+      fetch('projectsData.json')
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data[0].name);
+          document.querySelector('#projectName').innerHTML = data[0].name;
+          document.querySelector('#p1').innerHTML = data[0].p1;
+          document.querySelector('#p2').innerHTML = data[0].p2;
+          document.querySelector('#p3').innerHTML = data[0].p3;
+        });
+    </script>
+  </body>
+</html>
