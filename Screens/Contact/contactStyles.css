@@ -19,8 +19,8 @@
 .verticalHeading {
   position: relative;
   float: left;
-  top: 2em;
-  right: 4em;
+  top: 4em;
+  right: 3em;
   transform: rotate(-90deg);
   font-size: 7em;
   text-align: center;
@@ -67,4 +67,64 @@
 .contactDesc {
   color: white;
   padding-bottom: 10px;
+}
+
+/* ------------ RESPONSIVE ---------- */
+
+/* Mobile */
+@media only screen and (min-width: 0) and (max-width: 576px) {
+  .contactSection {
+    margin-top: 0em;
+  }
+  .contactHeading {
+    font-size: 4rem;
+  }
+  .contactImgDiv {
+    margin-left: 1rem;
+    margin-top: -1rem;
+  }
+  .contactImg {
+    height: auto;
+    width: 100%;
+  }
+  .formContainer {
+    width: 67%;
+    padding: 3em;
+    margin-top: -12em;
+    margin-bottom: 6em;
+  }
+  .contactHeading {
+    font-size: 2rem;
+    right: 1rem;
+  }
+  .verticalHeading {
+    top: 15rem;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .contactHeading {
+    font-size: 4rem;
+    right: 11rem;
+    top: 25rem;
+  }
+  .contactHeading {
+    font-size: 7rem;
+  }
+  .contactSection {
+    margin-top: 5em;
+  }
+
+  .formContainer {
+    margin-top: -42em;
+    width: 58%;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 993px) and (max-width: 1300px) {
+  .contactSection {
+    margin-top: 4rem;
+  }
 }
