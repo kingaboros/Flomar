@@ -57,6 +57,11 @@
   padding-top: 6em;
 }
 
+.teamImg {
+  height: 400px;
+  width: auto;
+  margin: 0 auto;
+}
 .teamTitle {
   margin-bottom: 2.1em;
   text-align: center;

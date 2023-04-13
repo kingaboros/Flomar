@@ -1191,10 +1191,16 @@ label.error {
 
 .project figure img {
   display: block;
-  width: 100%;
+  width: auto;
+  height: 880px;
   -webkit-transition: all 8s linear;
   -o-transition: all 8s linear;
   transition: all 8s linear;
+}
+
+.galleryImg {
+  object-fit: none;
+  object-position: right;
 }
 
 .project figure:after {
