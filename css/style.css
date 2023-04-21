@@ -72,6 +72,7 @@
 html {
   font-size: 75%;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -244,7 +245,7 @@ textarea.form-control {
 }
 
 .form-control:focus {
-  border-color: var(--mainColor);
+  border-color: var(--darkText);
   background-color: #fff;
   outline: 0;
   -webkit-box-shadow: none;
@@ -655,19 +656,42 @@ label.error {
 
 .header-phone {
   font-family: 'Oswald', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 0.81em;
   letter-spacing: 0.32em;
   position: absolute;
+  color: white;
   z-index: 3;
-  color: #fff;
   left: 45vmin;
   top: 5.9vmin;
 }
 
+.darkPhone {
+  color: var(--darkText);
+}
 .headerLogo {
-  width: 85%;
+  width: 60%;
   height: auto;
+}
+
+.redLines {
+  display: inline-block;
+  background-color: var(--mainColor);
+  width: 4em;
+  height: 7px;
+}
+
+.logoText {
+  font-family: 'montserratsemibold';
+  font-size: 10px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  color: var(--darkText);
+  position: relative;
+  left: -6em;
+  margin-top: 18px;
+  width: 1px;
 }
 
 @media (max-width: 600px) {
@@ -750,12 +774,6 @@ label.error {
   transform-origin: 0 0;
 }
 
-@media (max-height: 850px) {
-  .vertical-panel-title {
-    display: none;
-  }
-}
-
 .social-list {
   margin-bottom: 3.5vmin;
 }
@@ -766,7 +784,7 @@ label.error {
 
 .social-list .fa {
   font-size: 2.4vmin;
-  color: #c5c4c2;
+  color: var(--darkText);
 }
 
 .social-list .fa:hover {
@@ -838,6 +856,10 @@ label.error {
   color: var(--mainColor);
   background-color: transparent;
   margin-bottom: 1.5em;
+}
+
+.menuLinksHome > li > a {
+  color: #fff;
 }
 
 .navbar-desktop-menu li ul {
@@ -1026,7 +1048,7 @@ label.error {
 
 .navbar-mobile.affix {
   position: fixed;
-  z-index: 5;
+  z-index: 9999;
   background-color: #fff;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
   padding: 1.2em 0;
@@ -1522,6 +1544,7 @@ img.mfp-img {
 
 .experience {
   text-align: center;
+  margin-top: 3em;
 }
 
 .text-parallax {
@@ -1532,7 +1555,7 @@ img.mfp-img {
 .text-parallax-content {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  font-size: 16em;
+  font-size: 12em;
   line-height: 1;
   overflow: hidden;
   background: var(--backgroundColor);
@@ -1584,6 +1607,9 @@ img.mfp-img {
   opacity: 1;
 }
 
+.spacer {
+  margin-bottom: 7em;
+}
 /* ------------------------------------------------------------------------------- */
 /*  9. Objects
 /* ------------------------------------------------------------------------------- */
@@ -1615,7 +1641,7 @@ img.mfp-img {
 .object-info {
   position: absolute;
   display: none;
-  z-index: 1;
+  z-index: 5;
   left: 50%;
   bottom: 40px;
   width: 12.4em;

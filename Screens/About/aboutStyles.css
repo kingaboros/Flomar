@@ -1,17 +1,40 @@
 .aboutSection {
   height: 100vh;
   position: relative;
-  padding-top: 7.1em;
+  padding-top: 5.1em;
 }
 
 .aboutHeading {
   margin: 0 auto;
 }
 
+.aboutTitle {
+  left: 49.1%;
+  top: 45.86rem;
+  width: 100%;
+  font-size: clamp(8em, 14vw, 9em);
+  color: white;
+  z-index: 10;
+  opacity: 1;
+  font-weight: 600;
+  color: var(--backgroundColor);
+  text-shadow: -1px -1px 0 #fff, 0 -1px 0 #fff, 1px -1px 0 #fff, 1px 0 0 #fff,
+    1px 1px 0 #fff, 0 1px 0 #fff, -1px 1px 0 #fff, -1px 0 0 #fff;
+}
+
 .brandPanel,
 .verticalPanel {
   background-color: var(--backgroundColor);
   height: auto;
+}
+
+.aboutVideo {
+  position: relative;
+  width: 1780px;
+  height: 700px;
+  z-index: 6;
+  margin-left: 3.8rem;
+  margin-top: 3rem;
 }
 
 .servicesSection {
@@ -36,12 +59,19 @@
   margin-left: 12.9em;
 }
 
+.aboutContainer {
+  margin-left: 0;
+  width: 100%;
+}
+
 .aboutTitleCol {
-  margin-top: 11em;
+  margin: 11em 5em 0 -1em;
+  width: 22%;
 }
 
 .aboutCol {
-  width: 20%;
+  width: 21%;
+  margin-right: -5rem;
 }
 
 .aboutText {
@@ -54,18 +84,25 @@
 }
 
 .teamTextCol {
-  padding-top: 6em;
+  padding-top: 10em;
+  width: 100%;
+  padding-left: 0.5em;
 }
 
 .teamImg {
-  height: 400px;
-  width: auto;
-  margin: 0 auto;
+  height: auto;
+  width: 60%;
+  margin: 0 -6.5rem;
 }
 
 .teamTitle {
   margin-bottom: 2.1em;
-  text-align: center;
+  text-align: left;
+  margin-left: 23.2rem;
+}
+
+.teamFadeTitle {
+  left: 84%;
 }
 
 .missionTitle {
@@ -73,17 +110,23 @@
 }
 
 .missionSubtitle {
-  margin-bottom: 0.5em;
-  margin-top: 0;
+  margin: 2em 0 -1.5em 0.5em;
 }
 
 .fadeTitleMission {
-  left: 81%;
-  top: 1em;
+  left: 19%;
+  top: 0;
 }
 
 .missionTextCol {
-  padding-top: 3em;
+  padding-top: 4em;
+}
+
+.missionImg {
+  height: auto;
+  width: auto;
+  margin-top: -3em;
+  margin-left: -0.6em;
 }
 
 /* ////////////////////////////// */
@@ -200,34 +243,6 @@ input:focus + label {
   transform: scale(0.97);
 }
 
-@media screen and (max-width: 499px) {
-  .colHeading {
-    margin: 5em 0 2em 0.8em;
-  }
-  .aboutText {
-    margin-left: 0;
-    width: 292px;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  .aboutText {
-    margin-left: 0;
-    width: auto;
-  }
-  .aboutFlomarColText {
-    margin-top: 5em;
-    text-align: left;
-    width: 10%;
-  }
-  .aboutCol {
-    width: 25%;
-  }
-  .colHeading {
-    margin-left: 11.9em;
-  }
-}
-
 /* ------------ RESPONSIVE ---------- */
 
 /* Mobile */
@@ -236,11 +251,103 @@ input:focus + label {
     margin: 0 auto;
     max-width: 100%;
   }
+  .aboutTitle {
+    font-size: 4em;
+    left: 61%;
+    top: 10.5em;
+  }
+  .aboutVideo {
+    width: clamp(37rem, 30vw, 35rem);
+  }
+  .section-header {
+    padding-left: 4rem;
+  }
+  .section-title {
+    margin-left: 0;
+  }
+  .colHeading {
+    margin-left: 0.7em;
+  }
+
+  .teamTitle {
+    margin-left: 0.2rem;
+  }
+  .aboutTitleCol {
+    width: auto;
+    margin-inline: auto;
+  }
+  .aboutText {
+    margin-left: 0;
+  }
+  .teamImg {
+    margin: 0;
+    width: auto;
+  }
 }
 
+/* Tablet */
+
 @media only screen and (min-width: 577px) and (max-width: 992px) {
+  .aboutCol {
+    width: 100%;
+  }
   .aboutImg {
     margin: 0 auto;
     max-width: 80%;
+  }
+  .aboutVideo {
+    width: clamp(56rem, 60vw, 68rem);
+    margin-left: 6.8rem;
+  }
+  .section-header {
+    padding-left: 4rem;
+  }
+  .section-title {
+    margin-left: 0;
+  }
+  .colHeading {
+    margin-left: 0.7em;
+  }
+
+  .teamTitle {
+    margin-left: 0.2rem;
+  }
+  .aboutTitleCol {
+    width: auto;
+    margin-inline: auto;
+  }
+  .aboutText {
+    margin-left: 0;
+    width: 500px;
+  }
+  .teamImg {
+    margin: 0;
+    width: auto;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 993px) and (max-width: 2000px) {
+  .aboutCol {
+    margin-right: -21px;
+  }
+  .aboutText {
+    width: auto;
+    margin-left: 32px;
+  }
+  .colHeading {
+    margin-left: clamp(6em, 20.1vw, 20em);
+  }
+  .aboutTitleCol {
+    margin: 11em 2em 0 -1em;
+    width: 17%;
+  }
+  .teamImg {
+    height: auto;
+    width: 61%;
+    margin: 0 49px;
+  }
+  .teamTitle {
+    margin-left: clamp(6em, 19.3vw, 20em);
   }
 }

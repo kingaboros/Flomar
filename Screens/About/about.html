@@ -39,7 +39,7 @@
 
     <nav class="navbar-desktop visible-md visible-lg">
       <div class="container">
-        <a href="#top" class="brand js-target-scroll">
+        <a href="../../index.html" class="brand js-target-scroll">
           Flomar<span class="text-primary">.</span>
         </a>
         <ul class="nav navbar-desktop-menu">
@@ -69,7 +69,7 @@
     <!-- Navigation Mobile -->
 
     <nav class="nav navbar-mobile">
-      <a href="#top" class="brand js-target-scroll">
+      <a href="../../index.html" class="brand js-target-scroll">
         <span class="text-primary">.</span>flomar
       </a>
 
@@ -118,27 +118,88 @@
       <section id="aboutPage" class="aboutSection">
         <div class="container">
           <header class="section-header">
-            <strong class="fade-title-center">Despre noi</strong>
+            <strong class="fade-title-center aboutTitle">Despre noi</strong>
+            <video
+              class="aboutVideo"
+              src="../../img/flomar-video.mp4"
+              autoplay
+              loop
+            ></video>
           </header>
         </div>
       </section>
       <div class="content">
         <!-- About  -->
-        <div w3-include-html="/assets/aboutSection.html"></div>
+        <section id="about" class="about section">
+          <div class="container">
+            <header class="section-header">
+              <h2 class="section-title">
+                Despre <span class="text-primary">.FLOMAR</span>
+              </h2>
+              <strong class="fade-title-left">Despre</strong>
+            </header>
+            <div class="section-content">
+              <div class="row-base row">
+                <div class="col-base col-sm-12 col-md-4">
+                  <h3 class="col-about-title">
+                    <span class="text-primary">.</span>pe aceste structuri
+                    metalice construim vise
+                  </h3>
+                  <div class="col-about-info">
+                    <p>
+                      Flomar este o companie din Cluj-Napoca, specializată în
+                      fabricarea de confecții metalice. Cu o experiență în
+                      domeniu de peste 18 ani și un portofoliu vast de clienți,
+                      Flomar este o companie cunoscută pentru calitatea
+                      produselor lor și abordarea personalizată în relația cu
+                      clienții.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-base col-about-spec col-sm-12 col-md-4">
+                  <h3 class="col-about-title">
+                    specializarea<br />
+                    noastră<span class="text-primary">:</span>
+                  </h3>
+                  <div class="service-item">
+                    <img alt="" src="/img/img-icon/icon-architecture.png" />
+                    <h4>Tăiere laser</h4>
+                  </div>
+                  <div class="service-item">
+                    <img alt="" src="/img/img-icon/icon-interiors.png" />
+                    <h4>Vopsirea în câmp electrostatic</h4>
+                  </div>
+                  <div class="service-item">
+                    <img alt="" src="/img/img-icon/icon-planing.png" />
+                    <h4>Proiectare</h4>
+                  </div>
+                </div>
+                <div class="clearfix visible-sm"></div>
+                <div class="col-base col-about-img col-sm-12 col-md-4">
+                  <img
+                    alt=""
+                    class="img-responsive aboutImg"
+                    src="/img/final/about2.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <h3 class="col-about-title colHeading">
           <span class="text-primary">.</span> realizăm vise din structuri
           metalice
         </h3>
-        <div class="container">
+        <div class="container aboutContainer">
           <div class="row-base row">
-            <div class="col-base col-sm-3 col-md-3 aboutTitleCol">
+            <div class="col-base col-sm-12 col-md-4 aboutTitleCol">
               <div class="col-about-info">
-                <h2 class="section-title">
+                <h3 class="section-title">
                   despre <span class="text-primary">.FLOMAR</span>
-                </h2>
+                </h3>
               </div>
             </div>
-            <div class="col-base col-sm-3 col-md-3 aboutCol">
+            <div class="col-base col-sm-8 col-md-4 aboutCol">
               <div class="col-about-info aboutText">
                 <p>
                   De-a lungul anilor, Flomar a acumulat o experiență vastă în
@@ -151,7 +212,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-base col-sm-3 col-md-3 aboutCol">
+            <div class="col-base col-sm-8 col-md-4 aboutCol">
               <div class="col-about-info aboutText">
                 <p>
                   O altă valoare fundamentală a companiei este accentul pus pe
@@ -163,7 +224,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-base col-sm-3 col-md-3 aboutCol">
+            <div class="col-base col-sm-8 col-md-4 aboutCol">
               <div class="col-about-info aboutText">
                 <p>
                   Această abordare a dus la o cultură de muncă pozitivă și un
@@ -181,12 +242,9 @@
         </div>
         <!-- Our team -->
         <section id="team" class="section">
-          <div class="container">
+          <div class="container aboutContainer">
             <header class="section-header">
-              <h2 class="section-title text-primary">
-                echipa <span class="darkTitle">noastră</span>
-              </h2>
-              <strong class="fade-title-right">echipă</strong>
+              <strong class="fade-title-right teamFadeTitle">echipă</strong>
             </header>
             <div class="section-content">
               <h3 class="teamTitle">
@@ -194,8 +252,15 @@
                 baza
               </h3>
               <div class="row-base row">
-                <div class="col-base col-sm-6 col-md-4">
-                  <div class="col-about-info teamTextCol">
+                <div class="col-base col-sm-6 col-md-4 aboutTitleCol">
+                  <div class="col-about-info">
+                    <h3 class="section-title text-primary">
+                      echipa. <span class="darkTitle">noastră</span>
+                    </h3>
+                  </div>
+                </div>
+                <div class="col-base col-sm-6 col-md-4 aboutCol">
+                  <div class="col-about-info aboutText">
                     <p>
                       Flomar este o companie care pune accent pe o cultură a
                       echipelor, unde angajații se pot dezvolta personal și
@@ -206,16 +271,8 @@
                     </p>
                   </div>
                 </div>
-                <div class="clearfix visible-sm"></div>
-                <div class="col-base col-about-img col-sm-6 col-md-4">
-                  <img
-                    alt=""
-                    class="img-responsive teamImg"
-                    src="/img/team.jpg"
-                  />
-                </div>
-                <div class="col-base col-sm-6 col-md-4">
-                  <div class="col-about-info teamTextCol">
+                <div class="col-base col-sm-6 col-md-4 aboutCol">
+                  <div class="col-about-info aboutText">
                     <p>
                       Fie ingineri, tehnicieni sau operatori, toți membrii
                       echipei sunt la fel de importanți și își aduc contribuția
@@ -227,30 +284,40 @@
                     </p>
                   </div>
                 </div>
+                <div class="clearfix visible-sm"></div>
+                <div class="col-base col-about-img col-sm-6 col-md-4">
+                  <img
+                    alt=""
+                    class="img-responsive teamImg"
+                    src="/img/team.jpg"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </section>
         <!-- Mission section -->
         <section id="mission" class="section">
-          <div class="container">
+          <div class="container aboutContainer">
+            <header class="section-header missionTitle">
+              <strong class="fade-title-left fadeTitleMission">misiune</strong>
+            </header>
             <div class="section-content">
+              <h3 class="teamTitle">
+                <span class="text-primary">.</span>calitate
+                <span class="text-primary">.</span>inovare
+                <span class="text-primary">.</span>personalizare
+              </h3>
               <div class="row-base row">
-                <header class="section-header missionTitle">
-                  <h2 class="section-title text-primary">
-                    misiunea <span class="darkTitle">.flomar</span>
-                  </h2>
-                  <strong class="fade-title-right fadeTitleMission"
-                    >misiune</strong
-                  >
-                </header>
-                <div class="col-base col-sm-6 col-md-6">
-                  <h3 class="missionSubtitle">
-                    <span class="text-primary">.</span>calitate
-                    <span class="text-primary">.</span>inovare
-                    <span class="text-primary">.</span>personalizare
-                  </h3>
+                <div class="col-base col-sm-12 col-md-4 aboutTitleCol">
                   <div class="col-about-info">
+                    <h3 class="section-title text-primary">
+                      misiunea <span class="darkTitle">.flomar</span>
+                    </h3>
+                  </div>
+                </div>
+                <div class="col-base col-sm-12 col-md-4 aboutCol">
+                  <div class="col-about-info aboutText">
                     <p>
                       Misiunea Flomar este de a produce produse metalice de
                       înaltă calitate, inovatoare și personalizate, care să
@@ -262,9 +329,8 @@
                     </p>
                   </div>
                 </div>
-                <div class="clearfix visible-sm"></div>
-                <div class="col-base col-sm-6 col-md-6">
-                  <div class="col-about-info missionTextCol">
+                <div class="col-base col-sm-12 col-md-4 aboutCol">
+                  <div class="col-about-info aboutText">
                     <p>
                       Prin furnizarea de servicii personalizate și soluții de
                       înaltă calitate, Flomar își propune să devină un lider pe
@@ -273,6 +339,14 @@
                       de producție și a relațiilor cu clienții.
                     </p>
                   </div>
+                </div>
+                <div class="clearfix visible-sm"></div>
+                <div class="col-base col-about-img col-sm-6 col-md-4">
+                  <img
+                    alt=""
+                    class="img-responsive teamImg"
+                    src="/img/final/about1.jpg"
+                  />
                 </div>
               </div>
             </div>
@@ -299,10 +373,6 @@
             </h4>
           </div>
         </section>
-
-        <!-- Clients  -->
-
-        <div w3-include-html="/assets/clients.html"></div>
 
         <!-- Map -->
         <section id="objects" class="objects section">
@@ -409,6 +479,7 @@
             </div>
           </div>
         </section>
+        <div w3-include-html="./project"></div>
 
         <!-- Contacts -->
         <div w3-include-html="/assets/contact.html"></div>
